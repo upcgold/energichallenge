@@ -1,0 +1,12 @@
+1. eip-150 states the costs of opcodes
+
+2a. Storage is the on chain area where a contract can store data persistently between contract calls.
+2b. Memory is cheaper than storage gas wise, and data stored here are only accessible during contract execution.
+2c. Stack is non persistent storage area that has a capacity of ~1024 items, functions similar to memory.  Stack is where function parameters are pushed.  Too many will trigger stack exception.
+
+
+3. This is a piece of code that is run to set conditions on the execution of a function.  A function's definition can specify a modifier, and then if the modifier's conditions are met, the function will be executed, else it will not be executed.  In other words, modifiers are a declarative programmable suppliment for access modifier (public, private, protected).  See question 4 for applied use of modifier.
+
+4. See EnergiDeposit.sol
+
+5.
