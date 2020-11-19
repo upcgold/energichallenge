@@ -1,4 +1,5 @@
-1. eip-150 states the costs of opcodes
+1a. eip-150 states the costs of opcodes
+1b. Speciffically, multiply the number of gas by the gas price to get an estimation of the gas usage for a function
 
 2a. Storage is the on chain area where a contract can store data persistently between contract calls.
 2b. Memory is cheaper than storage gas wise, and data stored here are only accessible during contract execution.
@@ -9,4 +10,7 @@
 
 4. See EnergiDeposit.sol
 
-5.
+5. 
+- The currentFrontRunner address needs to be payable.
+- currentFrontrunner address comparison - statement should read
+  if(currentFrontrunner != address(0x0))
